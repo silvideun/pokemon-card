@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="type.css">
+</head>
+
+<body>
+
+    <button id="random-pokemon-btn">
+      <span class="button-glow-ring"></span>
+      <span class="text">Random pokemon</span>
+      <span class="shimmer"></span>
+    </button>
+
+  <div class="container">
+
+    <div class="card-container">
+        <div class="card-body card">
+
+            <!-- Заголовок карточки -->
+            <div class="card-header">
+                <div class="card-name pixel-font" id="pokemon-name">Имя</div>
+                <div class="card-hp">
+                    <span class="hp-label pixel-font" id="pokemon-hp">HP</span>
+                    <span class="hp-value pixel-font" id="pokemon-hp-value"></span>
+                    <img class="type-icon" src="" alt="Type Icon" id="pokemon-type-icon">
+                </div>
+            </div>
+
+            <div class="card-image-container">
+                <!-- Голографический оверлей -->
+                <div class="holo-overlay" id="holo-overlay"></div>
+
+                <!-- Пиксельная сетка для голографического эффекта -->
+                 <div class="pixel-grid" id="pixel-grid"></div>
+
+                 <div class="pokemon-image-wrapper">
+                    <div class="image-background"></div>
+                    <img 
+                    class="pokemon-image" 
+                    id="pokemon-image" 
+                    src="" 
+                    alt="pokemon-image">
+                 </div>
+            </div>
+
+            <div class="attack-section">
+                
+            <div class="attack-header">
+            <img class="energy-icon-type" id="energy-icon" src="" alt="Тип энергии"/>
+            <span class="ability-name pixel-font" id="ability-name">???</span>
+            <span class="attack-damage pixel-font" id="attack-damage">???</span>
+            </div>
+            <p class="ability-description pixel-font" id="ability-description">???</p>
+            </div>
+            <div class="bottom-section">
+              <div class="weakness-block">
+                <span class="weakness-label pixel-font">Weakness</span>
+                <div id="weakness-list"></div>
+              </div>
+              <div class="stats-block">
+                <span class="stat-label pixel-font">Attack: <span class="stat-value" id="attack-value">???</span></span>
+                <span class="stat-label pixel-font">Defense: <span class="stat-value" id="defense-value">???</span></span>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
